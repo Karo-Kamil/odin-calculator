@@ -1,0 +1,83 @@
+body {
+    background-color: #2f2e3d;
+}
+
+button {
+    width: 65px;
+    height: 60px;
+    margin: 4px;
+    background-color: #507687;
+    border-radius: 8px;
+    color: #FCFAEE;
+    font-size: 18px;
+}
+
+#container {
+    background-color: #080646;
+    width: 300px;
+    height: 500px;
+    margin-left: 80px;
+    padding: 0;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.display {
+    background-color: #507687;
+    flex: auto;
+    width: 250px;
+    height: 100px;
+    margin: 8px 9px 0 9px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+   
+
+
+}
+
+.display div{
+    flex: 1 1 0;
+    display: flex;
+    margin: none;
+    border: none;
+    outline-style: none;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.display p{
+    color: #FCFAEE;
+    font-size: 18px;
+}
+
+div input{
+    flex: auto;
+    background-color: #507687;
+    margin: none;
+    border: none;
+    outline-style: none;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-size: 20px;
+    color: #FCFAEE;
+}
+.clear {
+    width: 136px;
+}
+
+.signs {
+    background-color: #57A6A1;
+    color: #FCFAEE;
+}
+
+.equals {
+    background-color: #9c110d;
+}
