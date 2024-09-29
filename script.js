@@ -63,6 +63,9 @@ function solve() {
     if (firstInt == 0 && secondInt == 0 && arr[1] === "/") {
         para.textContent = "Gotcha!";
         input.value = "";
+    } else if (!/[0-9 .+\-*/^]/.test(input.value)){
+        para.textContent = "Error";
+        input.value = "";
     } else {
         if (arr[1] === "+") {
         para.textContent = `${firstInt} + ${secondInt} = ${firstInt+secondInt}`
@@ -82,6 +85,9 @@ function solve() {
     }
     }
 
-    
+    if (input.value % 1) {
+        input.value = parseFloat(input.value).toFixed(1);
+        para.textContent = parseFloat(input.value).toFixed(1);
+    }
     
 }
